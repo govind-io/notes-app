@@ -1,9 +1,7 @@
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
-import AddNotes from "./AddNotes.js";
 import logmsg from "./Alert.js";
-import { deletenotes } from "./DeleteNotes.js";
-import { listnotes } from "./ListNotes.js";
+import { AddNotes, deletenotes, listnotes } from "./NotesUtils.js";
 const checkvalidation = (id, all) => {
   if (id && all) {
     logmsg("dan", "Please select only one option");
